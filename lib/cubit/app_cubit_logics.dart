@@ -2,6 +2,7 @@ import 'package:adventure_travel_app/cubit/app_cubit_states.dart';
 import 'package:adventure_travel_app/cubit/app_cubit.dart';
 import 'package:adventure_travel_app/pages/detail_page.dart';
 import 'package:adventure_travel_app/pages/home_page.dart';
+import 'package:adventure_travel_app/pages/nav_pages/main_page.dart';
 import 'package:adventure_travel_app/pages/welcome_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
@@ -29,7 +30,7 @@ class _AppCubitLogicState extends State<AppCubitLogic> {
           );
         }
         if (state is LoadedState) {
-          return HomePage();
+          return MainPage();
         }
         if (state is DetailState) {
           return DetailPage();
